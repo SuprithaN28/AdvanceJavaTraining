@@ -78,7 +78,7 @@ public class JavaBasics implements IJavaBasics{
 
     public static void throwCustomException(int value) throws CustomExceptions {
         if(value==0){
-            System.out.println("custom Exception Thrown");
+            System.out.println("Custom Exception Thrown");
             throw new CustomExceptions("value cannot be 0");
         }
 
