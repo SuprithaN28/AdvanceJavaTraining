@@ -75,6 +75,17 @@ public class JavaBasics implements IJavaBasics{
         System.out.println("future date "+futureDate);
     }
 
+    @Override
+    public void garbageCollection() {
+        System.out.println("---------Garbage Collection---------");
+        GarbageCollectionClass object1=new GarbageCollectionClass("object1");
+        GarbageCollectionClass object2=new GarbageCollectionClass("object2");
+        System.out.println(" objects created "+object1.getName()+" "+object2.getName());
+        object2=null;
+        System.gc();
+        System.out.println("requested garbage collection");
+    }
+
 
     public static void throwCustomException(int value) throws CustomExceptions {
         if(value==0){

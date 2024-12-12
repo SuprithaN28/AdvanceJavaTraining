@@ -21,6 +21,7 @@ public class JavaBasicsController {
         javaBasics.genericsAndCollections();
         javaBasics.customExceptionHandling();
         javaBasics.java8Features();
+        javaBasics.garbageCollection();
 
     }
 

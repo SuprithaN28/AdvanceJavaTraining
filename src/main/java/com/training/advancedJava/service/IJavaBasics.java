@@ -9,4 +9,6 @@ public interface IJavaBasics {
     void customExceptionHandling() throws CustomExceptions;
 
     void java8Features();
+
+    void garbageCollection();
 }
