@@ -3,6 +3,7 @@ package com.training.advancedJava.controller;
 
 import com.training.advancedJava.exceptions.CustomExceptions;
 import com.training.advancedJava.service.IConcurrencyAndMultithreading;
+import com.training.advancedJava.service.IDesignpatterns;
 import com.training.advancedJava.service.IJavaBasics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,9 @@ public class JavaBasicsController {
 
     @Autowired
     IConcurrencyAndMultithreading concurrencyAndMultithreading;
+
+    @Autowired
+    IDesignpatterns designpatterns;
 
 
     @GetMapping("/javaBasics")
@@ -35,5 +39,11 @@ public class JavaBasicsController {
         concurrencyAndMultithreading.forkAndJoin();
         concurrencyAndMultithreading.virtualThreads();
         concurrencyAndMultithreading.bestPracticeForCuncurrentCode();
+    }
+
+    @GetMapping("/designPattern")
+    public void designPattern(){
+        designpatterns.singletonInstance();
+        designpatterns.factorypattern();
     }
 }
