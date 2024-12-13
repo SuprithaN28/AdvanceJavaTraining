@@ -2,6 +2,7 @@ package com.training.advancedJava.controller;
 
 
 import com.training.advancedJava.exceptions.CustomExceptions;
+import com.training.advancedJava.service.IConcurrencyAndMultithreading;
 import com.training.advancedJava.service.IJavaBasics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,9 @@ public class JavaBasicsController {
     @Autowired
     IJavaBasics javaBasics;
 
+    @Autowired
+    IConcurrencyAndMultithreading concurrencyAndMultithreading;
+
 
     @GetMapping("/javaBasics")
     public void basicsController() throws CustomExceptions {
@@ -22,7 +26,14 @@ public class JavaBasicsController {
         javaBasics.customExceptionHandling();
         javaBasics.java8Features();
         javaBasics.garbageCollection();
-
     }
 
+    @GetMapping("/multiThreading")
+    public void multiThreading() throws InterruptedException {
+        concurrencyAndMultithreading.mutliThreadingProgram();
+        concurrencyAndMultithreading.executorsAndThreadPool();
+        concurrencyAndMultithreading.forkAndJoin();
+        concurrencyAndMultithreading.virtualThreads();
+        concurrencyAndMultithreading.bestPracticeForCuncurrentCode();
+    }
 }
