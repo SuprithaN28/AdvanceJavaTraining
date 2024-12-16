@@ -1,4 +1,6 @@
-package com.training.advancedJava.service;
+package com.training.advancedJava.util;
+
+import com.training.advancedJava.service.Shape;
 
 public class ShapeFactory {
 

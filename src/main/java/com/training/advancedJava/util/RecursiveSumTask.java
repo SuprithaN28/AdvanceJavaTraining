@@ -1,4 +1,4 @@
-package com.training.advancedJava.service;
+package com.training.advancedJava.util;
 
 import java.util.concurrent.RecursiveTask;
 import java.util.stream.IntStream;
@@ -10,7 +10,7 @@ public class RecursiveSumTask  extends RecursiveTask<Integer> {
     private final int end;
     private static final int THRESHOLD= 20;
 
-    RecursiveSumTask(int[] numbers,int start,int end){
+    public RecursiveSumTask(int[] numbers, int start, int end){
         this.numbers=numbers;
         this.start=start;
         this.end=end;

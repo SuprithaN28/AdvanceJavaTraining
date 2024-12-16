@@ -1,4 +1,4 @@
-package com.training.advancedJava.service;
+package com.training.advancedJava.util;
 
 public class Singleton {
 

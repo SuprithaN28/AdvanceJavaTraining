@@ -1,5 +1,7 @@
 package com.training.advancedJava.service;
 
+import com.training.advancedJava.util.ShapeFactory;
+import com.training.advancedJava.util.Singleton;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -7,7 +9,7 @@ public class DesignPatterns implements IDesignpatterns {
     @Override
     public void singletonInstance() {
         System.out.println("-------------Singleton Pattern-------------");
-        Singleton  instance=Singleton.getInstance();
+        Singleton instance=Singleton.getInstance();
         instance.showMessage();
     }
 

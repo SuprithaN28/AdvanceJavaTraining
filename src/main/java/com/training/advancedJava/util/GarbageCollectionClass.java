@@ -1,6 +1,6 @@
-package com.training.advancedJava.service;
+package com.training.advancedJava.util;
 
- class GarbageCollectionClass {
+ public class GarbageCollectionClass {
 
      private String name;
 
