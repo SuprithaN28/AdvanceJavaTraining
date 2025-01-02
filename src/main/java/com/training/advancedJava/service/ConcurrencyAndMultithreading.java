@@ -1,9 +1,9 @@
 package com.training.advancedJava.service;
 
 
-import com.training.advancedJava.util.RecursiveSumTask;
-import com.training.advancedJava.util.ThreadOne;
-import com.training.advancedJava.util.ThreadTwo;
+import com.training.advancedJava.common.RecursiveSumTask;
+import com.training.advancedJava.common.ThreadOne;
+import com.training.advancedJava.common.ThreadTwo;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ExecutorService;

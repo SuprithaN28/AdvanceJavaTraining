@@ -1,4 +1,4 @@
-package com.training.advancedJava.util;
+package com.training.advancedJava.common;
 
 import com.training.advancedJava.service.Shape;
 

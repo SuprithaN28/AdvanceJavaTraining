@@ -1,7 +1,7 @@
 package com.training.advancedJava.service;
 
-import com.training.advancedJava.util.ShapeFactory;
-import com.training.advancedJava.util.Singleton;
+import com.training.advancedJava.common.ShapeFactory;
+import com.training.advancedJava.common.Singleton;
 import org.springframework.stereotype.Service;
 
 @Service

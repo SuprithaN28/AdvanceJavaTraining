@@ -1,4 +1,4 @@
-package com.training.advancedJava.util;
+package com.training.advancedJava.common;
 
 import java.util.concurrent.RecursiveTask;
 import java.util.stream.IntStream;

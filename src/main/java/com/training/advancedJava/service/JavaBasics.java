@@ -1,7 +1,7 @@
 package com.training.advancedJava.service;
 
 import com.training.advancedJava.exceptions.CustomExceptions;
-import com.training.advancedJava.util.GarbageCollectionClass;
+import com.training.advancedJava.common.GarbageCollectionClass;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
