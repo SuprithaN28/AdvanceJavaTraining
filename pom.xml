@@ -156,6 +156,12 @@
             <version>6.6.4.Final</version>
             <type>pom</type>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-server -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>4.2.0</version>
+        </dependency>
 
 
     </dependencies>
